@@ -7,7 +7,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const TOKEN ="1024128874:AAHcWgV4M3ICN_5GfbXPSYUoGtr6GHjvrMY";
 const bot = new TelegramBot(TOKEN,{polling:true});
 bot.on("message", (msg)=>{
-    bot.sendMessage(msg.chat.id,'Сообщение получено');
+    bot.sendMessage(msg.chat.id,'Сообщение получено111');
 });
 bot.onText(/\/echo (.+)/, (msg, match) => {
   // 'msg' is the received Message from Telegram
